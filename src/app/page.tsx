@@ -1,3 +1,4 @@
+import SearchBar from '@/components/SearchBar';
 import StockCard from '@/components/StockCard';
 import { Stock } from '@/types/stock';
 
@@ -24,6 +25,7 @@ export default async function Home() {
           Pantau harga saham Indonesia favoritmu
         </p>
 
+        <SearchBar />
         <div className="space-y-3">
           {!Array.isArray(stocks) || stocks.length === 0 ? (
             <p className="text-gray-500 text-center py-8">
